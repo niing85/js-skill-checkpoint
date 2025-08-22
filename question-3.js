@@ -4,7 +4,12 @@ function authenticateUser(username, password) {
   const validUsername = "user123";
   const validPassword = "securepass";
 
-  // เริ่มเขียนโค้ดตรงนี้
+  // เริ่มเขียนโค้ดตรงนี้//ternary operation
+  let message;
+  username===validUsername && password===validPassword 
+    ? message='Login successful.' 
+    : message='Login failed. Please check your username and password.'
+  return message;
 }
 
 // ตัวอย่างการใช้งาน
